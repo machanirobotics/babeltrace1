@@ -1,0 +1,9 @@
+[tasks.bindings]
+command = "bindgen"
+args = [
+    "wrapper.h",
+    "--allowlist-function=bt_.*",
+    "--allowlist-type=bt_.*",
+    "-o",
+    "src/bindings.rs",
+]
